@@ -1,0 +1,58 @@
+﻿@model Inventario.Cabecera
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Cabecera</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente.Tipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cliente.Tipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Departamento.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Departamento.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Empleado.Sueldo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empleado.Sueldo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Movimiento.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Movimiento.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdCab }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
